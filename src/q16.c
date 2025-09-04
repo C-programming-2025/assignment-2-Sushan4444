@@ -1,1 +1,15 @@
-// Write a C program that calculates the factorial of a given number using a do-while loop.
+#include <stdio.h>
+int main() {
+    int n, fact = 1, i = 1;
+    printf("Enter a number: ");
+    scanf("%d", &n);
+
+    do {
+        fact *= i;
+        i++;
+    } while (i <= n);
+
+    printf("Factorial = %d\n", fact);
+    return 0;
+}
+
